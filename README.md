@@ -20,16 +20,16 @@ Desenvolver um sistema de gestão de projetos com visualização de dados aplica
 
 ## 🚀 Como Executar
 1. Crie e ative o ambiente virtual:
-    ```
+    ```bash
     python -m venv venv
     source venv/Scripts/activate
     ```
 2. Instale as dependências:
-    ```
+    ```bash
     pip install -r requirements.txt
     ```
 3. Execute o sistema:
-    ```
+    ```bash
     python app.py
     ```
 
