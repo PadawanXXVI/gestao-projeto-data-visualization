@@ -1,6 +1,12 @@
-# Ignore o que não deve ir para o repositório
+# Ambiente virtual
 venv/
+
+# Cache do Python
 __pycache__/
 *.pyc
+
+# Banco de dados local
 database.db
+
+# Variáveis de ambiente
 .env
