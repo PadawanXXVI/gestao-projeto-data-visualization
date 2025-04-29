@@ -1,36 +1,50 @@
-# Gestão de Projetos - Sistema Flask com Dashboards de BI
+# Sistema de Gestão de Projetos
 
-Projeto de Data Visualization baseado em um sistema de gestão de projetos.
+Projeto Acadêmico da Disciplina **Data Visualization**  
+Curso: **Tecnologia em Ciência de Dados**  
+Faculdade de Tecnologia e Inovações Senac-DF  
+Professor Orientador: **Ms. Guilherme Lustosa Ricarte**  
+3º Semestre - 2025.1
 
-## Estrutura do Projeto
-- Backend: Flask + SQLAlchemy
-- Frontend: HTML + Tailwind CSS
+---
+
+## 📚 Objetivo
+Desenvolver um sistema de gestão de projetos com visualização de dados aplicada, utilizando Flask, SQLAlchemy, Pandas e Plotly.
+
+## 📂 Estrutura do Projeto
+- Backend: Flask
 - Banco de dados: SQLite
-- Análise de dados: Pandas + Plotly
-- Documentação: Jupyter Notebook seguindo CRISP-DM
+- Visualização de dados: Pandas + Plotly
+- Dashboard interativo: Curva S, Burndown, Caminho Crítico
+- Documentação: GitHub Wiki + Jupyter Notebook seguindo metodologia CRISP-DM
 
-## Executando o projeto
-1. Clone o repositório.
-2. Crie o ambiente virtual:
+## 🚀 Como Executar
+1. Crie e ative o ambiente virtual:
+    ```
+    python -m venv venv
+    source venv/Scripts/activate
+    ```
+2. Instale as dependências:
+    ```
+    pip install -r requirements.txt
+    ```
+3. Execute o sistema:
+    ```
+    python app.py
+    ```
 
-```bash
-python -m venv venv source venv/Scripts/activate # Windows
-```
+## 📊 Organização
+- `app.py` - Código principal Flask
+- `templates/` - Páginas HTML
+- `static/` - CSS/JS estáticos
+- `docs/` - Documentação técnica (modelos, rotas, fluxogramas)
+- `notebooks/` - Análises no formato CRISP-DM
 
-3. Instale as dependências:
+---
 
-```bash
-pip install -r requirements.txt
-```
+## 🛠️ Ferramentas de Gestão
+- GitHub Projects: gestão de tarefas e fluxo de trabalho
+- GitHub Issues: controle de atividades e bugs
+- GitHub Wiki: documentação detalhada
 
-4. Execute:
-
-```bash
-python app.py
-```
-
-## Organização
-- `templates/`: HTMLs do sistema.
-- `static/`: Estilos CSS e recursos.
-- `notebooks/`: Análises e desenvolvimento de BI.
-- `docs/`: Documentação técnica.
+---
