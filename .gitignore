@@ -1,0 +1,6 @@
+# Ignore o que não deve ir para o repositório
+venv/
+__pycache__/
+*.pyc
+database.db
+.env
