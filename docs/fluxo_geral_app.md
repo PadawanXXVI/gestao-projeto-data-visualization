@@ -9,6 +9,8 @@ Combina:
 - Banco de dados SQLite
 - Análises estruturadas com Pandas
 
+---
+
 ## 🔶 2. Configuração Inicial
 
 - Criação do app Flask
@@ -19,6 +21,8 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(BASE_DIR, 'd
 
 - SQLAlchemy é inicializado com ```db = SQLAlchemy(app)```
 - Migrations são gerenciadas por ```Flask-Migrate```
+
+---
 
 ## 🧱 3. Modelos (SQLAlchemy)
 
@@ -36,7 +40,7 @@ Permite estruturação hierárquica (tópico → subtópico)
 
 Relacionamento com tarefas
 
-## 🔹 Tarefa
+### 🔹 Tarefa
 
 Planejamento e execução de tarefas
 
@@ -62,6 +66,8 @@ Histórico de execução com percentual diário
 
 Campos: ```tarefa_id```, ```data```, ```percentual```
 
+---
+
 ## 🌐 4. Rotas Principais
 
 | Rota                              | Método   | Descrição                                        |
@@ -80,6 +86,8 @@ Campos: ```tarefa_id```, ```data```, ```percentual```
 | `/excluir_*`                      | GET      | Exclusão de projeto, colaborador ou tópico       |
 | `/projeto/<id>/gantt`             | GET      | Mostra gráfico Gantt com Plotly                  |
 
+---
+
 ## 📊 5. Visualizações com Plotly
 
 Geradas na rota ```/dashboard/<projeto_id>```:
@@ -93,12 +101,16 @@ Geradas na rota ```/dashboard/<projeto_id>```:
 Rota ```/projeto/<projeto_id>```:
 - Gantt Planejado: com metas visuais (prazo contratual e meta de 70%)
 
+---
+
 ## ⚙️ 6. Funções Auxiliares
 
 ```organizar_topicos(topicos, parent_id=None, nivel=0)```
 
 - Estrutura recursiva que organiza tópicos e subtópicos em ordem hierárquica
 - Usada para exibir corretamente a árvore de tópicos no template
+
+---
 
 ## 🔁 7. Fluxo de Execução Esperado
 
@@ -112,9 +124,13 @@ Rota ```/projeto/<projeto_id>```:
     - Caminho crítico
     - Distribuição de carga de trabalho
 
+---
+
 ## ✅ 8. Observações Finais
 
 - O ```app.py``` centraliza tanto os modelos quanto todas as rotas
 - Estrutura clara e modular
 - Boas práticas com SQLAlchemy e Flask
 - Excelente base para aplicar as fases seguintes do CRISP-DM (Exploração e Modelagem com Pandas e Plotly)
+
+---
