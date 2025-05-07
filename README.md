@@ -12,11 +12,11 @@ Professor Orientador: **Ms. Guilherme Lustosa Ricarte**
 Desenvolver um sistema de gestão de projetos com visualização de dados aplicada, utilizando Flask, SQLAlchemy, Pandas e Plotly.
 
 ## 📂 Estrutura do Projeto
-- Backend: Flask
-- Banco de dados: SQLite
+- Backend: Flask (modularizado com Blueprints)
+- Banco de dados: SQLite + SQLAlchemy
 - Visualização de dados: Pandas + Plotly
 - Dashboard interativo: Curva S, Burndown, Caminho Crítico
-- Documentação: GitHub Wiki + Jupyter Notebook seguindo metodologia CRISP-DM
+- Documentação: GitHub Wiki + Jupyter Notebook (seguindo metodologia CRISP-DM)
 
 ## 🚀 Como Executar
 1. Crie e ative o ambiente virtual:
@@ -30,21 +30,28 @@ Desenvolver um sistema de gestão de projetos com visualização de dados aplica
     ```
 3. Execute o sistema:
     ```bash
-    python app.py
+    python run.py
     ```
 
-## 📊 Organização
-- `app.py` - Código principal Flask
+## 📊 Organização de Diretórios
+- `run.py` - Ponto de entrada do sistema
+- `app/` - Estrutura modular Flask
+  - `routes/` - Rotas da aplicação
+  - `models.py` - Modelos de banco de dados
+  - `__init__.py` - Criação da aplicação
 - `templates/` - Páginas HTML
-- `static/` - CSS/JS estáticos
-- `docs/` - Documentação técnica (modelos, rotas, fluxogramas)
-- `notebooks/` - Análises no formato CRISP-DM
+- `static/` - CSS e JavaScript
+- `docs/` - Documentação técnica:
+  - [`analise_modelos.md`](docs/analise_modelos.md) – Modelos de dados explicados
+  - [`analise_rotas.md`](docs/analise_rotas.md) – Rotas da aplicação com funções
+  - [`fluxo_geral.md`](docs/fluxo_geral.md) – Fluxo do sistema e arquitetura
+- `notebooks/` - Desenvolvimento CRISP-DM
 
 ---
 
 ## 🛠️ Ferramentas de Gestão
-- GitHub Projects: gestão de tarefas e fluxo de trabalho
-- GitHub Issues: controle de atividades e bugs
-- GitHub Wiki: documentação detalhada
+- **GitHub Projects**: organização de tarefas e cronograma
+- **GitHub Issues**: controle de desenvolvimento
+- **GitHub Wiki**: documentação complementar
 
 ---
